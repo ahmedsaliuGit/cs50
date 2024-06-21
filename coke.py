@@ -1,7 +1,7 @@
 coke_price = 50
 
 def main():
-    print("Change Owed: ", collect_coin() - coke_price)
+    print("Change Owed:", collect_coin() - coke_price)
 
 def collect_coin():
     coin_received = 0
