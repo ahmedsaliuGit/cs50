@@ -11,12 +11,10 @@ def collect_coin():
 
         coin = int(input("Insert coin: "))
 
-        if coin != 25 or coin != 10 or coin != 5:
-            continue
+        if coin == 25 or coin == 10 or coin == 5:
+            coin_received = coin_received + coin
 
-        coin_received = coin_received + coin
-
-        if coin_received >= coke_price:
-            return coin_received
+            if coin_received >= coke_price:
+                return coin_received
 
 main()
