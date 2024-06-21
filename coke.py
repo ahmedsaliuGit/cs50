@@ -7,7 +7,7 @@ def collect_coin():
     coin_received = 0
 
     while True:
-        print(f"Amount due: {coke_price - coin_received}")
+        print(f"Amount Due: {coke_price - coin_received}")
 
         coin = int(input("Insert coin: "))
 
