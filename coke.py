@@ -14,6 +14,6 @@ def collect_coin():
         amount_due = amount_due + coin
 
         if amount_due >= coke_price:
-            return 
+            return amount_due
 
 main()
