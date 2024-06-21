@@ -4,9 +4,10 @@ vowels = {"A": True, "E": True, "I": True, "O": True, "U": True, "a": True, "e":
 answer = input("Input: ")
 
 for char in answer:
-    if vowels[char]:
-        output += ""
-    else:
-        output += char
+    print()
+    # if vowels[char]:
+    #     output += ""
+    # else:
+    #     output += char
 
 print("Output:", output)
