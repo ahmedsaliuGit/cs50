@@ -13,9 +13,11 @@ def is_valid(s):
         return False
     elif " " in s:
         return False
+    else:
 
     for char in s:
-        
+        if char in string.punctuation:
+            return False
 
     return True
 
