@@ -4,7 +4,7 @@ def main():
     collect_coin()
 
 def collect_coin():
-    print(f"Amount due {coke_price}")
+    print(f"Amount due: {coke_price}")
 
     coin = int(input("Insert coin: "))
 
