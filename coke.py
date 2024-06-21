@@ -11,6 +11,9 @@ def collect_coin():
 
         coin = int(input("Insert coin: "))
 
+        if coin != 25 or coin != 10 or coin != 5:
+            continue
+
         coin_received = coin_received + coin
 
         if coin_received >= coke_price:
