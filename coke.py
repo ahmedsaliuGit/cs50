@@ -4,16 +4,16 @@ def main():
     collect_coin()
 
 def collect_coin():
-    amount_due = 0
+    coin_received = 0
 
     while True:
-        print(f"Amount due: {coke_price - amount_due}")
+        print(f"Amount due: {coke_price - coin_received}")
 
         coin = int(input("Insert coin: "))
 
-        amount_due = amount_due + coin
+        coin_received = coin_received + coin
 
-        if amount_due >= coke_price:
-            return amount_due
+        if coin_received >= coke_price:
+            return coin_received
 
 main()
