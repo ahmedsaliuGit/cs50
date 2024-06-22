@@ -22,7 +22,7 @@ def is_valid(s):
 
             if digits == '' and char.isnumeric():
                 digits = digits + (char + s.lstrip(char))
-
+                print(digits)
                 if digits.isalpha():
                     return False
 
