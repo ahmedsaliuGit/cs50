@@ -13,5 +13,7 @@ fruits = {
     "Orange": 80,
     "Peach": 60,
     "Pear": 100,
-    "Pineapple 2 slices": 50
+    "Pineapple 2 slices": 50,
+    "Plums": 70,
+    "Strawberries": 50,
 }
