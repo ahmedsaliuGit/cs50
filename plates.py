@@ -23,8 +23,8 @@ def is_valid(s):
                 return False
 
             if digits == '' and char.isnumeric():
-                print(s[i:len(s)])
-                digits += s.lstrip(char)
+                digits += s[i:len(s)]
+                print(digits)
                 if digits.isalpha():
                     return False
 
