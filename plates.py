@@ -21,7 +21,7 @@ def is_valid(s):
                 return False
 
             if digits == '' and char.isnumeric():
-                print(s.lstrip(char))
+                print(s.removeprefix(char))
                 digits += s.lstrip(char)
                 if digits.isalpha():
                     return False
