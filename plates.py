@@ -20,7 +20,8 @@ def is_valid(s):
             if char in string.punctuation:
                 return False
 
-            if digits == '' and char.isnumeric()
+            if digits == '' and char.isnumeric():
+                digits += plate.lstrip(char)
 
     return True
 
