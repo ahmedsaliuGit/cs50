@@ -21,7 +21,9 @@ def is_valid(s):
                 return False
 
             if digits == '' and char.isnumeric():
-                digits += plate.lstrip(char)
+                digits = digits + (char + plate.lstrip(char))
+
+                i
 
     return True
 
