@@ -23,7 +23,11 @@ def is_valid(s):
             if digits == '' and char.isnumeric():
                 digits = digits + (char + plate.lstrip(char))
 
-                i
+                if digits.isalpha():
+                    return False
+
+                if digits[0] == '0':
+                    return False
 
     return True
 
