@@ -21,7 +21,7 @@ def is_valid(s):
                 return False
 
             if digits == '' and char.isnumeric():
-                digits = digits + (char + plate.lstrip(char))
+                digits = digits + (char + s.lstrip(char))
 
                 if digits.isalpha():
                     return False
