@@ -13,10 +13,15 @@ fruits = {
     "Orange": 80,
     "Peach": 60,
     "Pear": 100,
-    "Pineapple 2 slices": 50,
+    "Pineapple": 50,
     "Plums": 70,
     "Strawberries": 50,
     "Sweet Cherries": 100,
     "Tangerine": 50,
     "Watermelon": 80
 }
+
+fruit = input("Item: ")
+
+if fruit.title() in fruits:
+    print("Calories:", )
