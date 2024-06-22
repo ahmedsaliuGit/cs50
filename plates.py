@@ -25,7 +25,9 @@ def is_valid(s):
             if digits == '' and char.isnumeric():
                 digits += s[i:len(s)]
                 print(digits)
-                if digits.isalnum():
+                if digits.isdigit():
+                    continue
+                else:
                     return False
 
                 if digits[0] == '0':
