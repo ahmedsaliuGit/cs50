@@ -24,10 +24,10 @@ def is_valid(s):
 
             if digits == '' and char.isnumeric():
                 digits += s[i:len(s)]
-                print(digits)
+                
                 if digits[0] == '0':
                     return False
-                
+
                 if digits.isdigit():
                     continue
                 else:
