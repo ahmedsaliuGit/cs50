@@ -8,5 +8,10 @@ fruits = {
     "Honeydew Melon": 50,
     "Kiwifruit": 90,
     "Lemon": 15,
-    "Lemon": 15,
+    "Lime": 20,
+    "Nectarine": 60,
+    "Orange": 80,
+    "Peach": 60,
+    "Pear": 100,
+    "Pineapple 2 slices": 50
 }
