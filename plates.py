@@ -11,6 +11,8 @@ def main():
 def is_valid(s):
     if len(s) < 2 or len(s) > 6:
         return False
+    elif s.isdigit():
+        return False
     elif " " in s:
         return False
     else:
@@ -24,7 +26,7 @@ def is_valid(s):
 
             if digits == '' and char.isnumeric():
                 digits += s[i:len(s)]
-                
+
                 if digits[0] == '0':
                     return False
 
