@@ -21,7 +21,7 @@ fruits = {
     "Watermelon": 80
 }
 
-fruit = input("Item: ")
+fruit = input("Item: ").title()
 
-if fruit.title() in fruits:
-    print("Calories:", )
+if fruit in fruits:
+    print("Calories:", fruits[fruit])
