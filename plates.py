@@ -14,9 +14,13 @@ def is_valid(s):
     elif " " in s:
         return False
     else:
+        digits = ''
+
         for char in s:
             if char in string.punctuation:
                 return False
+
+            if digits == '' and char.isnumeric()
 
     return True
 
