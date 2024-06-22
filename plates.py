@@ -16,12 +16,14 @@ def is_valid(s):
     else:
         digits = ''
 
-        for char in s:
+        for i in range(len(s)):
+            char = s[i]
+
             if char in string.punctuation:
                 return False
 
             if digits == '' and char.isnumeric():
-                print(s.removeprefix(char))
+                print(s[i:len(s)])
                 digits += s.lstrip(char)
                 if digits.isalpha():
                     return False
