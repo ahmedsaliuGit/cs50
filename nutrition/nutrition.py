@@ -1,6 +1,6 @@
 fruits = {
     "Apple": 130,
-    "Avocado California": 50,
+    "Avocado": 50,
     "Banana": 110,
     "Cantaloupe": 50,
     "Grapefruit": 60,
