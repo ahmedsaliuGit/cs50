@@ -1,8 +1,8 @@
 def main():
     items = get_order("")
 
-    for i in range(len(items)):
-        print(f"{i}. {items[i].upper()}")
+    for item in items:
+        print(f"{items[item]} {item.upper()}")
 
 def get_order(prompt):
     items = {}
@@ -14,6 +14,8 @@ def get_order(prompt):
             return items
         else:
             if item_name not in items:
-                items.append(item_name)
+                items[item_name] = 1
+            else:
+                items[item_name] = items[item_name] + 1
 
 main()
