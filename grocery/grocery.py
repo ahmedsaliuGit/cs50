@@ -2,7 +2,7 @@ def main():
     items = get_order("")
 
     for i in range(len(items)):
-        print(f"{i}. {items[i]}")
+        print(f"{i}. {items[i].upper()}")
 
 def get_order(prompt):
     items = []
