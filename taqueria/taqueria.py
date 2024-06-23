@@ -13,7 +13,7 @@ def get_order(prompt):
             if item_name.title() in menu_items:
                 total += menu_items[item_name.title()]
 
-                print(f"Total: {total}")
+                print(f"Total: ${total}")
 
 menu_items = {
     "Baja Taco": 4.25,
