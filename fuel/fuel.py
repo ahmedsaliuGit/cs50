@@ -6,10 +6,10 @@ def main():
     if res <= 1:
         print("E")
 
-    if res >= 99:
+    elif res >= 99:
         print("F")
-
-    print(f"{round(res)}%")
+    else:
+        print(f"{round(res)}%")
 
 def get_fraction(prompt):
     while True:
