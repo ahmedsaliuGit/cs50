@@ -7,7 +7,13 @@ def get_order(prompt):
     while True:
         try:
             item_name = raw_input(prompt)
+        except EOFError:
+            break
+        else:
+            if item_name in menu_items:
+                total += menu_items[item_name]
 
+                print(f"Total: {total}")
 
 menu_items = {
     "Baja Taco": 4.25,
