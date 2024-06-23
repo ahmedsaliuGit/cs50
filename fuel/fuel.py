@@ -3,6 +3,14 @@ def main():
 
     res = (fraction[0] / fraction[1]) * 100
 
+    if res < 1:
+        print("E")
+
+    if res >= 99:
+        print("F")
+
+    print(f"{res}%")
+
 def get_fraction(prompt):
     while True:
         try:
