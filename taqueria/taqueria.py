@@ -6,7 +6,7 @@ def get_order(prompt):
 
     while True:
         try:
-            item_name = raw_input(prompt)
+            item_name = input(prompt)
         except EOFError:
             break
         else:
