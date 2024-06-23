@@ -1,8 +1,6 @@
 def main():
     items = get_order("")
 
-    print()
-    
     for item in items:
         print(f"{items[item]} {item.upper()}")
 
