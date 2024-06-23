@@ -1,5 +1,11 @@
 def main():
     items = get_order("")
+    item_names = []
+
+    for name in items:
+        item_names.append(name)
+
+    
 
     print()
 
