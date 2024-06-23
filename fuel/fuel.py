@@ -5,7 +5,7 @@ def get_fraction(prompt):
         try:
             x_y = input(prompt).split("/")
             print(len(x_y))
-            if len(x_y) != 2:
+            if len(x_y) < 2:
                 raise IndexError("List index out of range.")
 
             x = int(x_y[0])
