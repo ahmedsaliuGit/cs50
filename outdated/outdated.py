@@ -1,5 +1,5 @@
 def main():
-
+    print(parse_date("Date: "))
 
 def parse_date(date_string):
     valid_month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
@@ -26,9 +26,9 @@ def parse_date(date_string):
 
     return f"{year:>04}-{month:>02}-{day:>02}"
 
-def prompt_for_date():
+def prompt_for_date(prompt):
     while True:
-        date = input("Date: ")
+        date = input(prompt)
         try:
             return parse_date(date)
         except ValueError:
