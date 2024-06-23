@@ -10,8 +10,8 @@ def get_order(prompt):
         except EOFError:
             break
         else:
-            if item_name.title in menu_items:
-                total += menu_items[item_name.title]
+            if item_name.title() in menu_items:
+                total += menu_items[item_name.title()]
 
                 print(f"Total: {total}")
 
