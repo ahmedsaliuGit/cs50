@@ -26,4 +26,12 @@ def parse_date(date_string):
 
     return f"{year:>04}-{month:>02}-{day:>02}"
 
+def prompt_for_date():
+    while True:
+        date = input("Date: ")
+        try:
+            return parse_date(date)
+        except ValueError:
+            pass
+
 main()
