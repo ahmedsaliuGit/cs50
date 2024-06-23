@@ -1,7 +1,7 @@
 def main():
     fraction = get_fraction("Fraction: ")
 
-    res = (fraction[0] / fraction[1]) * 100
+    res = round(fraction[0] / fraction[1]) * 100
 
     if res <= 1:
         print("E")
