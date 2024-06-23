@@ -6,7 +6,7 @@ def get_fraction(prompt):
             x_y = input(prompt).split("/")
 
             return x_y
-        except:
+        except ValueError:
             pass
 
 main()
