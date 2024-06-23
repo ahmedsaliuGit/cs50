@@ -1,5 +1,7 @@
 def main():
-    print(get_fraction("Fraction: "))
+    fraction = get_fraction("Fraction: ")
+
+    res = (fraction[0] / fraction[1]) * 100
 
 def get_fraction(prompt):
     while True:
