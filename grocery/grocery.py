@@ -5,11 +5,11 @@ def main():
     for name in items:
         item_names.append(name)
 
-    
+    item_names.sort()
 
     print()
 
-    for item in items:
+    for item in item_names:
         print(f"{items[item]} {item.upper()}")
 
 def get_order(prompt):
