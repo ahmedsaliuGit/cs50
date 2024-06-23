@@ -13,6 +13,12 @@ def get_fraction(prompt):
 
             y = int(x_y[1])
 
+            if y == 0:
+                raise ValueError()
+
+            if x > y:
+                raise ValueError()
+
             return [x, y]
         except ValueError:
             pass
