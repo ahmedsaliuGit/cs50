@@ -1,5 +1,6 @@
 def main():
-    get_order("Item: ")
+    for i in range(len(get_order(""))):
+        print()
 
 def get_order(prompt):
     items = []
@@ -8,11 +9,9 @@ def get_order(prompt):
         try:
             item_name = input(prompt)
         except EOFError:
-            break
+            return items
         else:
-            if item_name.title() not in menu_items:
-                total += menu_items[item_name.title()]
-
-                print("Total: ${:0.2f}".format(total))
+            if item_name not in items:
+                items.append(item_name)
 
 main()
