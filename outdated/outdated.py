@@ -9,7 +9,11 @@ def parse_date(date_string):
     else:
         month, day, year = date_string.split(" ")
         month = valid_month_names.index(month) + 1
-        day = day.strip(",")
+
+        if "," in day:
+            day = day.strip(",")
+        else:
+            raise ValueError
 
     year = int(year)
     month = int(month)
