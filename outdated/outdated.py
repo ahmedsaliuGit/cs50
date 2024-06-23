@@ -1,5 +1,5 @@
 def main():
-    print(parse_date("Date: "))
+    print(prompt_for_date("Date: "))
 
 def parse_date(date_string):
     valid_month_names = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"]
