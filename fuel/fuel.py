@@ -8,6 +8,8 @@ def get_fraction(prompt):
             x = int(x_y[0])
 
             y = int(x_y[1])
+
+            return [x, y]
         except ValueError:
             pass
 
