@@ -28,9 +28,8 @@ def parse_date(date_string):
 
 def prompt_for_date(prompt):
     while True:
-        date = input(prompt)
         try:
-            return parse_date(date)
+            return parse_date(input(prompt))
         except ValueError:
             pass
 
