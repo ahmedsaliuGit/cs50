@@ -1,7 +1,7 @@
 def main():
     fraction = get_fraction("Fraction: ")
 
-    res = round(fraction[0] / fraction[1]) * 100
+    res = (fraction[0] / fraction[1]) * 100
 
     if res <= 1:
         print("E")
@@ -9,7 +9,7 @@ def main():
     if res >= 99:
         print("F")
 
-    print(f"{res}%")
+    print(f"{round(res)}%")
 
 def get_fraction(prompt):
     while True:
