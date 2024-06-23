@@ -16,8 +16,7 @@ def get_order(prompt):
             return items
         else:
             if item_name not in items:
-                items["name"] = item_name
-                ite
+                items[item_name] = 1
             else:
                 items[item_name] = items[item_name] + 1
 
