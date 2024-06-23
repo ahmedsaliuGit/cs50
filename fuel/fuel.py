@@ -15,5 +15,7 @@ def get_fraction(prompt):
             return [x, y]
         except ValueError:
             pass
+        except IndexError:
+            pass
 
 main()
