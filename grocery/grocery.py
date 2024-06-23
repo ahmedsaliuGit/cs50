@@ -5,7 +5,7 @@ def main():
         print(f"{i}. {items[i].upper()}")
 
 def get_order(prompt):
-    items = []
+    items = {}
 
     while True:
         try:
