@@ -1,6 +1,8 @@
 def main():
-    for i in range(len(get_order(""))):
-        print()
+    items = get_order("")
+
+    for i in range(len(items)):
+        print(f"{i}. {items[i]}")
 
 def get_order(prompt):
     items = []
