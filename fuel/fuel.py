@@ -5,7 +5,9 @@ def get_fraction(prompt):
         try:
             x_y = input(prompt).split("/")
 
-            return x_y
+            x = int(x_y[0])
+
+            y = int(x_y[1])
         except ValueError:
             pass
 
