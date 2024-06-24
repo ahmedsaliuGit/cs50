@@ -1,5 +1,11 @@
 def main():
     names = get_str("Name: ")
+    output = "Adieu, adieu, to "
+    n = len(names)
+
+    for i in range(n):
+        name = names[i]
+        output += name
 
 
 def get_str(prompt):
