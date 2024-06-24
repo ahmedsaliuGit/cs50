@@ -7,7 +7,10 @@ def main():
 
     guess = get_input("Guess: ")
 
-    
+    if rand_num == guess:
+        print("Just right!")
+    elif rand_num < guess:
+        get_input("Guess: ")
 
 def get_input(prompt):
     while True:
