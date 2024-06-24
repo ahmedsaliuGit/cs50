@@ -7,9 +7,8 @@ figlet = Figlet()
 fonts = figlet.getFonts()
 
 cmd_argv = sys.argv
-
+print(randint(0, len(fonts)))
 if len(cmd_argv) == 0:
-    print(randint(0, len(fonts)))
     figlet.setFont(font=fonts[randint(0, len(fonts))])
 elif len(cmd_argv[1:]) == 2:
 
