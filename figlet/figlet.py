@@ -5,9 +5,11 @@ figlet = Figlet()
 
 fonts = figlet.getFonts()
 
-argv_len = len(sys.argv)
+cmd_argv = sys.argv
 
-if argv_len != 0 or argv_len != 2:
-    sys.exist()
+if len(cmd_argv) != 0 or len(cmd_argv) != 2:
+    sys.exit()
+
+if cmd_argv[1] != "-f" or cmd_argv[1] != "--font":
 
 
