@@ -9,14 +9,13 @@ def get_level(prompt):
     while True:
         try:
             num = int(input(prompt))
-
-            if num != 1 or num != 2 or num != 3:
-                raise ValueError
-
         except ValueError:
             pass
         else:
-            return num
+            if num != 1 or num != 2 or num != 3:
+                return num
+            else:
+                pass
 
 
 def generate_integer(level):
