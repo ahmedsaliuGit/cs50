@@ -1,5 +1,5 @@
 def main():
-    get_str("Name:")
+    print(get_str("Name:"))
 
 
 def get_str(prompt):
@@ -10,3 +10,5 @@ def get_str(prompt):
             names.append(input(prompt))
         except EOFError:
             return names
+
+main()
