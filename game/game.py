@@ -8,7 +8,7 @@ def main():
 
     while True:
         guess = get_input("Guess: ")
-        print(guess, rand_num)
+        
         if rand_num == guess:
             print("Just right!")
             break
