@@ -9,7 +9,8 @@ def main():
 
         if i == n - 2:
             output += " and "
-        elif i > 0
+        elif i > 0 and i != n - 1:
+            output += ", "
 
     print(output)
 
