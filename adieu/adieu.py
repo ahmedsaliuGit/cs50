@@ -7,6 +7,8 @@ def main():
         name = names[i]
         output += name
 
+        if(i == n)
+
     print(output)
 
 
