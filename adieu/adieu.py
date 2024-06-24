@@ -1,5 +1,5 @@
 def main():
-    print(get_str("Name:"))
+    names = get_str("Name: ")
 
 
 def get_str(prompt):
