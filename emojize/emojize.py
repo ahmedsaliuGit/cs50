@@ -1,6 +1,5 @@
 import requests
-import json
 
-response = requests.get("https://carpedm20.github.io/emoji/all.html?enableList=enable_list_alias")
+response = requests.get("https://httpbin.org/basic-auth/user/pass', auth=('user', 'pass'))
 
-print(json(response.json()))
+print(response.json())
