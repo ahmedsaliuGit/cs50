@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    ...
+    print(get_level("Level: "))
 
 
 def get_level(prompt):
