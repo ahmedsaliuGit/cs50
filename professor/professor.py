@@ -12,18 +12,18 @@ def main():
 
         while True:
             try:
-                temp = int(input(f"{X} + {Y} = "))
+                temp = get_level(f"{X} + {Y} = "))
                 break
             except ValueError:
                 print("EEE")
                 error += 1
                 break
-            
+
         if temp != X+Y:
             print("EEE")
             while True:
                 try:
-                    temp = int(input(f"{X} + {Y} = "))
+                    temp = get_level(f"{X} + {Y} = "))
                 except ValueError:
                     print("EEE")
                     error += 1
