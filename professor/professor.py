@@ -9,7 +9,7 @@ def main():
     for _ in range(0, 10):
         X = generate_integer(level)
         Y = generate_integer(level)
-        
+
         while True:
             try:
                 temp = int(input(f"{X} + {Y} = "))
@@ -18,6 +18,7 @@ def main():
                 print("EEE")
                 error += 1
                 break
+            
         if temp != X+Y:
             print("EEE")
             while True:
