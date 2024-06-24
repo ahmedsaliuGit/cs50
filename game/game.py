@@ -1,3 +1,4 @@
+import sys
 from random import randint
 
 def main():
@@ -8,10 +9,10 @@ def main():
 
     while True:
         guess = get_input("Guess: ")
-        
+
         if rand_num == guess:
             print("Just right!")
-            break
+            sys.exit()
         elif guess < rand_num:
             print("Too small!")
         else:
