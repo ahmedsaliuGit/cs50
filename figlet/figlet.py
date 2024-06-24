@@ -21,6 +21,7 @@ elif len(cmd_argv[1:]) == 2:
 
 user_str = input("Input: ")
 
+print("Output: ")
 print(figlet.renderText(user_str))
 
 
