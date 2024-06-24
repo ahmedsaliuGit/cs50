@@ -7,7 +7,7 @@ def main():
         name = names[i]
         output += name
 
-        print(i > 0 and i < n - 1)
+        print(i)
         if i == n - 2:
             output += " and "
         elif i > 0 and i < n - 1:
