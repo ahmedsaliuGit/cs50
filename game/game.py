@@ -1,10 +1,13 @@
 def main():
-    print(get_input("Level "))
+    print(get_input("Level: "))
 
 def get_input(prompt):
     while True:
         try:
-            return int(input(prompt))
+            num = int(input(prompt))
+
+            if num <= 0:
+                raise ValueError
         except ValueError:
             pass
 
