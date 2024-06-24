@@ -10,10 +10,9 @@ def get_level(prompt):
         try:
             num = int(input(prompt))
 
-            if num <= 0:
+            if num != 1 or num != 2 or num != 3:
                 raise ValueError
 
-            if num 
         except ValueError:
             pass
         else:
