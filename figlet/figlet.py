@@ -11,7 +11,7 @@ cmd_argv = sys.argv
 if len(cmd_argv) == 0:
     figlet.setFont(font=fonts[randin(0, len(fonts))])
 elif len(cmd_argv[1:]) == 2:
-    print(cmd_argv[1])
+    print(cmd_argv[1] == "-f")
     if cmd_argv[1] != "-f" or cmd_argv[1] != "--font":
         sys.exit("Error: flag is not available")
 
