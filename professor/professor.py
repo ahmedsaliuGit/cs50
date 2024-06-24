@@ -12,6 +12,8 @@ def get_level(prompt):
 
             if num <= 0:
                 raise ValueError
+
+            if num 
         except ValueError:
             pass
         else:
@@ -19,7 +21,12 @@ def get_level(prompt):
 
 
 def generate_integer(level):
-    ...
+    if level == 1:
+        return random.randint(0, 9)
+    elif level == 2:
+        return random.randint(10, 99)
+    else:
+        return (random.randint(100, 999))
 
 
 if __name__ == "__main__":
