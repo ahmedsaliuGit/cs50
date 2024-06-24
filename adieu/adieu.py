@@ -11,7 +11,7 @@ def main():
             output += " and "
         elif n > 2 and i == n - 2:
             output += ", and "
-        else:
+        elif :
             output += ", "
 
     print()
