@@ -10,5 +10,7 @@ def get_input(prompt):
                 raise ValueError
         except ValueError:
             pass
+        else:
+            return num
 
 main()
