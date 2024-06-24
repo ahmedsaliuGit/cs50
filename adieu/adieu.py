@@ -12,6 +12,7 @@ def main():
         elif i < n - 1:
             output += ", "
 
+    print()
     print(output)
 
 
