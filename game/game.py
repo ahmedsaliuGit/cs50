@@ -1,5 +1,13 @@
+from random import randint
+
 def main():
-    print(get_input("Level: "))
+    level = get_input("Level: ")
+
+    rand_num = randint(1, level)
+
+    guess = get_input("Guess: ")
+
+    
 
 def get_input(prompt):
     while True:
