@@ -4,7 +4,9 @@ figlet = Figlet()
 
 fonts = figlet.getFonts()
 
-if len(argv) != 0 or len(argv) != 2:
+argv_len = len(argv)
+
+if argv_len != 0 or argv_len != 2:
     argv.exist()
 
 
