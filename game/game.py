@@ -5,12 +5,17 @@ def main():
 
     rand_num = randint(1, level)
 
-    guess = get_input("Guess: ")
 
-    if rand_num == guess:
-        print("Just right!")
-    elif rand_num < guess:
-        get_input("Guess: ")
+    while True:
+        guess = get_input("Guess: ")
+
+        if rand_num == guess:
+            print("Just right!")
+            break
+        elif rand_num < guess:
+            print("Too small!")
+        else:
+            print("Too large!")
 
 def get_input(prompt):
     while True:
