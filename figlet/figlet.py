@@ -19,4 +19,8 @@ elif len(cmd_argv[1:]) == 2:
 
     figlet.setFont(font=cmd_argv[2])
 
+user_str = input("Input: ")
+
+print(figlet.renderText(user_str))
+
 
