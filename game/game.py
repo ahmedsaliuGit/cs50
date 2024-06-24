@@ -12,7 +12,7 @@ def main():
         if rand_num == guess:
             print("Just right!")
             break
-        elif rand_num < guess:
+        elif guess < rand_num:
             print("Too small!")
         else:
             print("Too large!")
