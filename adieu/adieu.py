@@ -7,6 +7,8 @@ def main():
         name = names[i]
         output += name
 
+    print(output)
+
 
 def get_str(prompt):
     names = []
