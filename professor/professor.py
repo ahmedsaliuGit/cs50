@@ -12,7 +12,7 @@ def get_level(prompt):
         except ValueError:
             pass
         else:
-            if num != 1 or num != 2 or num != 3:
+            if num == 1 or num == 2 or num == 3:
                 return num
             else:
                 pass
