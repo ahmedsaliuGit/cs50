@@ -10,7 +10,7 @@ cmd_argv = sys.argv
 
 if len(cmd_argv[1:]) == 0:
     figlet.setFont(font=fonts[randint(0, len(fonts))])
-elif len(cmd_argv[1:]) == 2:
+elif len(cmd_argv[1:]) > 1:
 
     if cmd_argv[1] != "-f" and cmd_argv[1] != "--font":
         sys.exit("Invalid usage")
