@@ -12,9 +12,9 @@ if len(cmd_argv) == 0:
     figlet.setFont(font=fonts[randin(0, len(fonts))])
 elif len(cmd_argv[1:]) == 2:
     print(cmd_argv[1] != "--font")
-    if cmd_argv[1] != "-f" or cmd_argv[1] != "--font":
-        sys.exit("Error: flag is not available")
-    elif cmd_argv[1] != "--font":
+    if cmd_argv[1] == "-f" or cmd_argv[1] == "--font":
+        
+    else:
         sys.exit("Error: flag is not available")
 
     if cmd_argv[2] not in fonts:
