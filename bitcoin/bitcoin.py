@@ -3,8 +3,6 @@ import requests
 
 try:
     if len(sys.argv) > 1 and (sys.argv[1].isnumeric() or float(sys.argv[1])):
-        if sys.argv[1] <= 0:
-            raise ValueError
 
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
