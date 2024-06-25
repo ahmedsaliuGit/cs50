@@ -1,7 +1,9 @@
 def main():
     phrase = input("Greeting: ")
 
-    print(value(phrase.lower().replace(" ","")))
+    phrase = phrase.lower().replace(" ","")
+    print(phrase)
+    print(value(phrase))
 
 def value(greeting):
     if not greeting.find("hello"):
