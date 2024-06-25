@@ -9,6 +9,8 @@ def main():
         x = generate_integer(level)
         y = generate_integer(level)
 
+        
+
 
 def get_level(prompt):
     while True:
