@@ -17,6 +17,8 @@ def main():
             error = 0
 
             while error < 3:
+                print("EEE")
+
                 
 
                 error += 1
