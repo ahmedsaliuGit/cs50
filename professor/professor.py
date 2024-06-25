@@ -19,19 +19,16 @@ def main():
         else:
             error = 0
 
-            while error < 3:
+            while ans != x + y:
                 print("EEE")
 
                 ans = get_level(f"{x} + {y} = ")
 
-                if ans == x + y:
-                    break
+                if error == 3:
+                    print(f"{x} + {y} = {x + y}")
+                    sys.exit("{x} + {y} = {x + y}")
 
                 error += 1
-
-            if error == 3:
-                print(f"{x} + {y} = {x + y}")
-                sys.exit()
 
     print("Score: ", score)
 
