@@ -16,3 +16,9 @@ def test_letter_number():
     assert is_valid("cs50") == True
     assert is_valid("CS50") == True
     assert is_valid("AAA222") == True
+
+def test_ends_letter():
+    assert is_valid("AAA22A") == False
+
+def test_space_middle():
+    assert is_valid("AAA 2A") == False
