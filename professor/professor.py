@@ -1,57 +1,46 @@
+import sys
 import random
 
-
 def main():
-    level = get_level("Level: ")
+    num = get_level()
+
+    errors = 1
     score = 0
 
-    for _ in range(10):
-        x = generate_integer(level)
-        y = generate_integer(level)
+    for i in range(10):
+        x = generate_integer(num)
+        for j in range(1):
+            y = generate_integer(num)
 
-        ans = get_level(f"{x} + {y} = ")
+            answer = x + y
+            equation = input(f"{x} + {y} = ")
 
-        if ans == x + y:
-            score += 1
-            continue
-        else:
-            error = 0
+            if int(equation) == answer:
+                score += 1
 
-            while error < 3:
+            while int(equation) != answer:
+                errors += 1
                 print("EEE")
+                equation = input(f"{x} + {y} = ")
+                if errors >= 3:
+                    print(answer)
+                    sys.exit("Score: " + str(score))
 
-                ans = get_level(f"{x} + {y} = ")
+    print("Score: " + str(score))
 
-                if ans == x + y:
-                    break
+# prompt for level and reprompt if needed
+def get_level():
+    levelChoice = input("Level: ")
 
-                error += 1
+    if levelChoice.isalpha() or int(levelChoice) <= 0 or int(levelChoice) > 3:
+        input("Level: ")
+    else:
+        levelChoice = int(levelChoice)
+        for i in [1,2,3]:
+            if levelChoice == i:
+                return levelChoice
 
-            if error == 3:
-                print(f"{x} + {y} = {x + y}")
-
-    print("Score:", score)
-
-
-def get_level(prompt):
-    while True:
-        try:
-            num = int(input(prompt))
-        except ValueError:
-            if prompt == "Level: ":
-                pass
-            else:
-                return "EEE"
-        else:
-            if prompt == "Level: ":
-                if num == 1 or num == 2 or num == 3:
-                    return num
-                else:
-                    pass
-            else:
-                return num
-
-
+# generate int from level choice
 def generate_integer(level):
     try:
         if level == 1:
@@ -59,10 +48,9 @@ def generate_integer(level):
         elif level == 2:
             return random.randint(10, 99)
         elif level == 3:
-            return (random.randint(100, 999))
+            return random.randint(100, 999)
     except:
         raise ValueError
-
 
 if __name__ == "__main__":
     main()
