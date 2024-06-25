@@ -1,12 +1,20 @@
-a = input("Greeting: ")
+def main():
+    phrase = input("Greeting: ")
 
-b = a.lower().replace(" ","")
+    print(value(phrase))
 
-if not b.find("hello"):
-        print("$0")
+def value(greeting):
+    b = greeting.lower().replace(" ","")
 
-elif b[0] == "h":
-        print("$20")
+    if not b.find("hello"):
+        return "$0"
 
-else:
-        print("$100")
+    elif b[0] == "h":
+        return "$20"
+
+    else:
+        return "$100"
+
+
+if __name__ == "__main__":
+    main()
