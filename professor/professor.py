@@ -57,8 +57,10 @@ def generate_integer(level):
         return random.randint(0, 9)
     elif level == 2:
         return random.randint(10, 99)
-    else:
+    elif level == 3:
         return (random.randint(100, 999))
+    else:
+        raise ValueError
 
 
 if __name__ == "__main__":
