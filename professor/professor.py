@@ -25,8 +25,8 @@ def main():
                 ans = get_level(f"{x} + {y} = ")
 
                 error += 1
-                
-                if error >= 3:
+
+                if error >= 2:
                     sys.exit(str(x) + " + " + str(y) + " = " + str(x + y))
 
 
