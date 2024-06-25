@@ -1,5 +1,8 @@
 import sys
 import requests
+import locale
+
+locale.setlocale(locale.LC_ALL, '')
 
 if len(sys.argv) > 1 and sys.argv[1].isnumeric():
     try:
@@ -7,7 +10,7 @@ if len(sys.argv) > 1 and sys.argv[1].isnumeric():
 
         bpi = response.json()
 
-        print("${:0.4f}".format(float(sys.argv[1]) * bpi["bpi"]["USD"]["rate_float"]))
+        print(locale.format("%.4f", float(sys.argv[1]) * bpi["bpi"]["USD"]["rate_float"]), grouping=True)
     except requests.RequestException:
         print("Network error")
 else:
