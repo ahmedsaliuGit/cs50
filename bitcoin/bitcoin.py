@@ -6,6 +6,8 @@ if len(sys.argv) > 1 or sys.argv[1].isnumeric():
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
         bpi = response.json()
+
+        print(sys.argv[1] * bpi["bpi"]["USD"]["rate_float"])
     except requests.RequestException:
         print("Network error")
 else:
