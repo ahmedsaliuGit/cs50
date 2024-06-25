@@ -8,7 +8,9 @@ try:
         bpi = response.json()
 
         print("${:,.4f}".format(float(sys.argv[1]) * bpi["bpi"]["USD"]["rate_float"]))
+    else:
+         sys.exit("Missing command-line argument")
 except requests.RequestException:
-        print("Network error")
-else:
+    print("Network error")
+except ValueError:
     sys.exit("Missing command-line argument")
