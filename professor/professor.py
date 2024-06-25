@@ -31,8 +31,9 @@ def main():
 
             if error == 3:
                 print(f"{x} + {y} = {x + y}")
+                sys.exit()
 
-    sys.exit("Score: " + str(score))
+    print("Score: ", score)
 
 
 def get_level(prompt):
