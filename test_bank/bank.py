@@ -1,18 +1,18 @@
 def main():
-    phrase = input("Greeting: ")
+    a = input("Greeting: ")
+    value(a)
 
-    print(value(phrase.lower().replace(" ","")))
+def value(a):
+    b = a.lower().strip()
 
-def value(greeting):
-    if not greeting.find("hello"):
-        return "$0"
+    if not b.find("hello"):
+        return 0
 
-    elif greeting[0] == "h":
-        return "$20"
+    elif b[0] == "h":
+        return 20
 
     else:
-        return "$100"
-
+        return 100
 
 if __name__ == "__main__":
     main()
