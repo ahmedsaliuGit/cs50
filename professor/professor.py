@@ -24,9 +24,8 @@ def main():
 
                 ans = get_level(f"{x} + {y} = ")
 
-                if error == 3:
-                    print(f"{x} + {y} = {x + y}")
-                    sys.exit("{x} + {y} = {x + y}")
+                if error >= 3:
+                    sys.exit(str(x) + " + " + str(y) + " = " + str(x + y))
 
                 error += 1
 
