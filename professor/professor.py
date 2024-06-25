@@ -2,14 +2,21 @@ import random
 
 
 def main():
-    level = get_level("Level: ")
+    level = get_input("Level: ")
     score = 0
 
     for _ in range(10):
         x = generate_integer(level)
         y = generate_integer(level)
 
-        ans = 
+        ans = get_input(f"{x} + {y} = ")
+
+        if ans == x + y:
+            continue
+        else:
+            error = 0
+
+            
 
 
 def get_level(prompt):
