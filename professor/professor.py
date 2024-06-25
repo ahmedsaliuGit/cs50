@@ -19,7 +19,10 @@ def main():
             while error < 3:
                 print("EEE")
 
-                
+                ans = get_input(f"{x} + {y} = ")
+
+                if ans == x + y:
+                    break
 
                 error += 1
 
