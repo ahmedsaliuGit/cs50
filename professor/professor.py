@@ -2,7 +2,7 @@ import random
 
 
 def main():
-    level = get_level("Level: ")
+    level = get_level("Ans: ")
     print(generate_integer(level))
 
 
