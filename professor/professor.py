@@ -32,7 +32,7 @@ def main():
             if error == 3:
                 print(f"{x} + {y} = {x + y}")
 
-    sys.exit("Score: " + score)
+    sys.exit("Score: " + str(score))
 
 
 def get_level(prompt):
