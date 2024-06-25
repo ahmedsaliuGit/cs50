@@ -15,7 +15,10 @@ def get_level(prompt):
         try:
             num = int(input(prompt))
         except ValueError:
-            pass
+            if prompt == "Level: ":
+                pass
+            else:
+                return "EEE"
         else:
             if prompt == "Level: ":
                 if num == 1 or num == 2 or num == 3:
