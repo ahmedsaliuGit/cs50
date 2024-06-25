@@ -1,3 +1,5 @@
+
+import sys
 import random
 
 
@@ -30,7 +32,7 @@ def main():
             if error == 3:
                 print(f"{x} + {y} = {x + y}")
 
-    print("Score:", score)
+    sys.exit("Score: " + score)
 
 
 def get_level(prompt):
