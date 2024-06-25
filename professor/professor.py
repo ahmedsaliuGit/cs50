@@ -64,4 +64,5 @@ def generate_integer(level):
         raise ValueError
 
 
-main()
+if __name__ == "__main__":
+    main()
