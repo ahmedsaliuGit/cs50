@@ -12,6 +12,7 @@ def main():
         ans = get_input(f"{x} + {y} = ")
 
         if ans == x + y:
+            
             continue
         else:
             error = 0
@@ -25,6 +26,8 @@ def main():
                     break
 
                 error += 1
+
+            print(f"{x} + {y} = {x + y}")
 
 
 def get_level(prompt):
