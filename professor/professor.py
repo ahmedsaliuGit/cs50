@@ -3,6 +3,7 @@ import random
 
 def main():
     level = get_level("Level: ")
+    print(generate_integer(level))
 
 
 def get_level(prompt):
