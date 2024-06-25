@@ -16,7 +16,10 @@ def main():
         else:
             error = 0
 
-            
+            while error < 3:
+                
+
+                error += 1
 
 
 def get_level(prompt):
