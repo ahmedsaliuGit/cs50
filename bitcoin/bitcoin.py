@@ -1,7 +1,10 @@
 import sys
 import requests
 
-if sys.argv[1].isnumeric() or len(sys.argv) > 1:
-    # TODO:
+if len(sys.argv) > 1 or sys.argv[1].isnumeric():
+    try:
+        ...
+    except requests.RequestException:
+        ...
 else:
     sys.exit("Missing command-line argument")
