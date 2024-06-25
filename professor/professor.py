@@ -5,11 +5,11 @@ def main():
     level = get_level("Level: ")
     score = 0
 
-    for i in range(10):
+    for _ in range(10):
         x = generate_integer(level)
         y = generate_integer(level)
 
-        
+        ans = 
 
 
 def get_level(prompt):
