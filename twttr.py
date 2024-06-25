@@ -1,8 +1,10 @@
+import sys
+
 def main():
     answer = input("Input: ")
 
     print("Output:", shorten(answer))
-
+    sys.exit(1)
 
 def shorten(word):
     output = ""
