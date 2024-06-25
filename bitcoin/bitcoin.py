@@ -1,8 +1,7 @@
 import sys
 import requests
 
-print(sys.argv[1].isdecimal())
-if len(sys.argv) > 1 and (sys.argv[1].isnumeric() or sys.argv[1].isdecimal()):
+if len(sys.argv) > 1 and (sys.argv[1].isnumeric() or float(sys.argv[1])):
     try:
         response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
 
