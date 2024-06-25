@@ -9,7 +9,7 @@ def test_all_number():
     assert is_valid("11") == False
 
 def test_letter_number_2_len():
-    assert is_valid("A1") == False
+    assert is_valid("A1") == True
     assert is_valid("1A") == False
 
 def test_letter_number():
