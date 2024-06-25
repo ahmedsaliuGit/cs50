@@ -2,8 +2,12 @@ import random
 
 
 def main():
-    level = get_level("Ans: ")
-    print(generate_integer(level))
+    level = get_level("Level: ")
+    score = 0
+
+    for i in range(10):
+        x = generate_integer(level)
+        y = generate_integer(level)
 
 
 def get_level(prompt):
