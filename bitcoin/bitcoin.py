@@ -1,4 +1,7 @@
 import sys
 import requests
 
-n = float(input(""))
+if sys.argv[1].isnumeric():
+    # TODO:
+else:
+    sys.exit("Missing command-line argument")
