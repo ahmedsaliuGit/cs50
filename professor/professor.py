@@ -27,7 +27,7 @@ def main():
 
                 error += 1
 
-            if error === 3
+            if error == 3:
                 print(f"{x} + {y} = {x + y}")
 
     print("Score:", score)
