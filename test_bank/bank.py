@@ -1,15 +1,13 @@
 def main():
     phrase = input("Greeting: ")
 
-    print(value(phrase))
+    print(value(phrase.lower().replace(" ","")))
 
 def value(greeting):
-    b = greeting.lower().replace(" ","")
-
-    if not b.find("hello"):
+    if not greeting.find("hello"):
         return "$0"
 
-    elif b[0] == "h":
+    elif greeting[0] == "h":
         return "$20"
 
     else:
