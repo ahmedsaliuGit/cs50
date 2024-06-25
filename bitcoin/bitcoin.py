@@ -7,7 +7,7 @@ if len(sys.argv) > 1 and sys.argv[1].isnumeric():
 
         bpi = response.json()
 
-        print(f"${(float(sys.argv[1]) * bpi["bpi"]["USD"]["rate_float"]):,.4f}")
+        print("${:,.4f}".format(float(sys.argv[1]) * bpi["bpi"]["USD"]["rate_float"]))
     except requests.RequestException:
         print("Network error")
 else:
