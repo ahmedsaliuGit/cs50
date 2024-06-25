@@ -1,7 +1,7 @@
-from twittr import shorten
+from twttr import shorten
 
 def test_empty_str():
     assert shorten("") == ""
 
 def test_argument():
-    assert shorten("Twitter") == "twttr"
+    assert shorten("Twitter") == "Twttr"
