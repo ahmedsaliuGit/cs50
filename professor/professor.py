@@ -32,7 +32,7 @@ def main():
     print("Score:", score)
 
 
-def get_level(prompt):
+def get_input(prompt):
     while True:
         try:
             num = int(input(prompt))
