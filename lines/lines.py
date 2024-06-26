@@ -1,8 +1,13 @@
 import sys
 
 def main():
+    count = 0
+    lines_code = []
+
     if validate_input() == True:
-        
+        try:
+            with open(sys.argv[1]) as file:
+                
 
 def validate_input():
     size = len(sys.argv[1:])
