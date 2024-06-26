@@ -9,8 +9,8 @@ def main():
         try:
             with open(sys.argv[1], "r") as file:
                 reader = csv.reader(file)
-                
-                for row in reader[1:]:
+
+                for row in reader:
                     contents.append(row)
 
         except FileNotFoundError:
