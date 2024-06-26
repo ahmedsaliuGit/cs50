@@ -7,7 +7,7 @@ def main():
 
     if is_valid == True:
         try:
-            with open(sys.argv[1], "a+") as file:
+            with open(sys.argv[1], "r") as file:
                 reader = csv.reader(file)
 
                 for row in reader:
