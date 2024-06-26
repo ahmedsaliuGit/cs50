@@ -9,7 +9,7 @@ def main():
         try:
             with open(sys.argv[1], "r") as file:
                 reader = csv.reader(file)
-                file_contents = reader.readlines()
+                
                 for row in reader[1:]:
                     contents.append(row)
 
