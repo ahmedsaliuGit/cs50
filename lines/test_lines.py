@@ -7,15 +7,15 @@ def main():
     test_not_python_file()
 
 def test_argument_is_one():
-    assert validate_input("hello.txt") == True
+    assert validate_input(["lines.py", "hello.py"]) == True
 
 def test_too_few_arguments():
-    assert validate_input() == "Too few command-line arguments"
+    assert validate_input(["lines.py"]) == "Too few command-line arguments"
 
-def test_too_many_arguments():
+def test_too_many_arguments(["lines.py", "hello.txt", "foo"]):
     assert validate_input() == "Too many command-line arguments"
 
-def test_not_python_file():
+def test_not_python_file(["lines.py", "hello"]):
     assert validate_input() == "Not a Python file"
 
 if __name__ == "__main__":
