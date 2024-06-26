@@ -14,7 +14,7 @@ def main():
                     if row[0] == "name":
                         continue
                     split_col = row[0].split(",")
-                    contents.append([split_col[0], split_col[1], f" {row[1]}"])
+                    contents.append([split_col[0], split_col[1].strip(), row[1]])
 
             with open(sys.argv[2], "w") as file:
                 writer = csv.writer(file, delimiter=",")
