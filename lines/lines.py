@@ -11,7 +11,9 @@ def validate_input():
             return "Too few command-line arguments"
         elif size > 1:
             return "Too many command-line arguments"
-
+    elif not sys.argv[1].endswith(".py"):
+        return "Not a Python file"
+    
     return True
 
 if __name__ == "__main__":
