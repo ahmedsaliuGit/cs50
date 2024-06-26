@@ -19,7 +19,7 @@ def main():
     else:
         sys.exit(is_valid)
 
-    print(tabulate(menus, headers="keys"))
+    print(tabulate(menus, headers="keys", tablefmt="grid"))
 
 def validate_input(arguments):
     size = len(arguments[1:])
