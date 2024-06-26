@@ -12,11 +12,11 @@ def test_argument_is_one():
 def test_too_few_arguments():
     assert validate_input(["lines.py"]) == "Too few command-line arguments"
 
-def test_too_many_arguments(["lines.py", "hello.txt", "foo"]):
-    assert validate_input() == "Too many command-line arguments"
+def test_too_many_arguments():
+    assert validate_input(["lines.py", "hello.txt", "foo"]) == "Too many command-line arguments"
 
-def test_not_python_file(["lines.py", "hello"]):
-    assert validate_input() == "Not a Python file"
+def test_not_python_file():
+    assert validate_input(["lines.py", "hello"]) == "Not a Python file"
 
 if __name__ == "__main__":
     main()
