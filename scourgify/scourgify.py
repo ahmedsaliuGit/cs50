@@ -18,6 +18,8 @@ def main():
 
             with open(sys.argv[2], "w") as file:
                 writer = csv.writer(file, delimiter=",")
+                writer.writerow(["first", "last", "home"])
+                
         except IOError:
             sys.exit(f"Could not read {sys.argv[1]}")
     else:
