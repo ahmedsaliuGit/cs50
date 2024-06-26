@@ -11,6 +11,8 @@ def main():
                 reader = csv.reader(file)
 
                 for row in reader:
+                    if row[0] == "name":
+                        continue
                     contents.append(row)
 
         except FileNotFoundError:
