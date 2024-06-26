@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    lines_code =0
+    lines_code = 0
 
     if validate_input(sys.argv) == True:
         try:
