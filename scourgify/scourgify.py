@@ -8,7 +8,7 @@ def main():
     if is_valid == True:
         try:
             with open(sys.argv[1], "a+") as file:
-                reader = csv.DictReader(file)
+                reader = csv.reader(file)
 
                 for row in reader:
                     menus.append(row)
