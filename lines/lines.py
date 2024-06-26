@@ -4,7 +4,7 @@ def main():
     print(validate_input())
 
 def validate_input():
-    size = len(sys.argv)
+    size = len(sys.argv[1:])
 
     if size != 1:
         if size < 1:
