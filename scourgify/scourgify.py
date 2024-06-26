@@ -3,11 +3,11 @@ import csv
 
 def main():
     is_valid = validate_input(sys.argv)
-    menus = []
+    contents = []
 
     if is_valid == True:
         try:
-            with open(sys.argv[1]) as file:
+            with open(sys.argv[1], "a+") as file:
                 reader = csv.DictReader(file)
 
                 for row in reader:
