@@ -15,6 +15,8 @@ def main():
     else:
         sys.exit(validate_input())
 
+    print(lines_code)
+
 def validate_input():
     size = len(sys.argv[1:])
 
