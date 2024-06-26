@@ -14,7 +14,7 @@ def main():
     else:
         sys.exit(is_valid)
 
-    print(reader.reader())
+    print(reader)
 
 def validate_input(arguments):
     size = len(arguments[1:])
