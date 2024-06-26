@@ -13,7 +13,8 @@ def main():
                 for row in reader:
                     if row[0] == "name":
                         continue
-                    contents.append(row)
+                    split_col = row[0].split(",")
+                    contents.append([split_col[0], split_col[1], row[1]])
 
         except FileNotFoundError:
             sys.exit("File does not exist")
