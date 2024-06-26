@@ -7,7 +7,7 @@ def main():
         try:
             with open(sys.argv[1]) as file:
                 for line in file:
-                    if not line.startswith("# ") or not line.startswith("#") or not line.isspace():
+                    if not line.startswith("# ") and not line.startswith("#") and not line.isspace():
                         lines_code += 1
 
         except FileNotFoundError:
