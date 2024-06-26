@@ -1,13 +1,13 @@
 import sys
 
 def main():
-    count = 0
-    lines_code = []
+    lines_code =
 
     if validate_input() == True:
         try:
-            with open(sys.argv[1]) as files:
-                
+            with open(sys.argv[1]) as file:
+                for line in file:
+                    
         except FileNotFoundError:
             sys.exit("File does not exist")
 
