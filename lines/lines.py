@@ -1,7 +1,8 @@
 import sys
 
 def main():
-    print(validate_input())
+    if validate_input() == True:
+        
 
 def validate_input():
     size = len(sys.argv[1:])
@@ -13,7 +14,7 @@ def validate_input():
             return "Too many command-line arguments"
     elif not sys.argv[1].endswith(".py"):
         return "Not a Python file"
-    
+
     return True
 
 if __name__ == "__main__":
