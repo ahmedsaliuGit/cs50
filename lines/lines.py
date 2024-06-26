@@ -1,7 +1,7 @@
 import sys
 
 def main():
-    #
+    print(validate_input())
 
 def validate_input():
     size = len(sys.argv)
