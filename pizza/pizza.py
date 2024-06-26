@@ -1,11 +1,11 @@
 import sys
-
+import csv
 
 def main():
     if validate_input(sys.argv) == True:
         try:
             with open(sys.argv[1]) as file:
-                
+                reader = csv.DictReader()
 
         except FileNotFoundError:
             sys.exit("File does not exist")
