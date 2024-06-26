@@ -5,16 +5,14 @@ def main():
     if validate_input(sys.argv) == True:
         try:
             with open(sys.argv[1]) as file:
-                for line in file:
-                    if not line.strip().startswith("#") and not line.isspace():
-                        lines_code += 1
+                
 
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
         sys.exit(validate_input())
 
-    print(lines_code)
+    #print(lines_code)
 
 def validate_input(arguments):
     size = len(arguments[1:])
