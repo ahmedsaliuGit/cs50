@@ -3,18 +3,22 @@ import csv
 
 def main():
     is_valid = validate_input(sys.argv)
+    menus = []
 
     if is_valid == True:
         try:
             with open(sys.argv[1]) as file:
                 reader = csv.DictReader(file)
 
+                for row in reader:
+                    menus.append(row)
+
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
         sys.exit(is_valid)
 
-    print(reader)
+    print(menus)
 
 def validate_input(arguments):
     size = len(arguments[1:])
