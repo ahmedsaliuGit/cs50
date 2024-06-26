@@ -10,7 +10,7 @@ def main():
             with open(sys.argv[1], "r") as file:
                 reader = csv.reader(file)
 
-                for row in reader:
+                for row in reader[1:]:
                     contents.append(row)
 
         except FileNotFoundError:
