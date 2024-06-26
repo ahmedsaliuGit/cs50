@@ -12,7 +12,7 @@ def main():
     else:
         sys.exit(validate_input())
 
-    #print(lines_code)
+    print(reader)
 
 def validate_input(arguments):
     size = len(arguments[1:])
