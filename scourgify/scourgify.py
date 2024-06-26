@@ -10,9 +10,9 @@ def main():
             with open(sys.argv[1], "r") as file:
                 reader = csv.reader(file)
 
-                reader = next(reader)
-
                 for row in reader:
+                    if row[0] == "name":
+                        continue
                     split_col = row[0].split(",")
                     contents.append([split_col[0], split_col[1], row[1]])
 
