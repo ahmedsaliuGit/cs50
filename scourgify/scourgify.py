@@ -13,7 +13,7 @@ def main():
                 for row in reader:
                     if row[0] == "name":
                         continue
-                    first, last = row[0].split(", ")
+                    last, first = row[0].split(", ")
                     contents.append([first, last, row[1]])
 
             with open(sys.argv[2], "w") as file:
