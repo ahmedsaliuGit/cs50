@@ -11,12 +11,14 @@ def main():
                 reader = csv.reader(file)
 
                 for row in reader:
-                    menus.append(row)
+                    contents.append(row)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
         sys.exit(is_valid)
+
+    print(contents)
 
 def validate_input(arguments):
     size = len(arguments[1:])
