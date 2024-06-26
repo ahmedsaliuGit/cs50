@@ -1,5 +1,6 @@
 import sys
 import csv
+from tabulate import tabulate
 
 def main():
     is_valid = validate_input(sys.argv)
@@ -18,7 +19,7 @@ def main():
     else:
         sys.exit(is_valid)
 
-    print(menus)
+    print(tabulate(menus))
 
 def validate_input(arguments):
     size = len(arguments[1:])
