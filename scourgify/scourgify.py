@@ -16,8 +16,10 @@ def main():
                     split_col = row[0].split(",")
                     contents.append([split_col[0], split_col[1], row[1]])
 
-        except FileNotFoundError:
-            sys.exit("File does not exist")
+            with open(sys.argv[2], "w") as file:
+                
+        except IOError:
+            sys.exit(f"Could not read {sys.argv[1]}")
     else:
         sys.exit(is_valid)
 
