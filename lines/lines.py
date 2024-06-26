@@ -13,7 +13,7 @@ def main():
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
-        sys.exit(validate_input())
+        sys.exit(validate_input(sys.argv))
 
     print(lines_code)
 
