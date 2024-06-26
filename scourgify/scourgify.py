@@ -17,7 +17,7 @@ def main():
                     contents.append([split_col[0], split_col[1], row[1]])
 
             with open(sys.argv[2], "w") as file:
-                
+                writer = csv.writer(file, delimiter=",")
         except IOError:
             sys.exit(f"Could not read {sys.argv[1]}")
     else:
