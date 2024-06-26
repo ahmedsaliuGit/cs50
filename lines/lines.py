@@ -7,9 +7,9 @@ def main():
     if validate_input() == True:
         try:
             with open(sys.argv[1]) as files:
-
+                
         except FileNotFoundError:
-            sys.exit()
+            sys.exit("File does not exist")
 
 def validate_input():
     size = len(sys.argv[1:])
