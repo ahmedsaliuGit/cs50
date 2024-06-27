@@ -10,7 +10,9 @@ def main():
                 shirt = Image.open("shirt.png")
                 size = shirt.size
 
-                fit_image = ImageOps.fit(image, size)
+                fit_image = ImageOps.fit(image, size).save(sys.argv[2])
+
+                fit_image.paste(shirt, shirt)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
