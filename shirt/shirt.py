@@ -1,4 +1,5 @@
 import sys
+import os.path
 from PIL import Image, ImageOps
 
 def main():
