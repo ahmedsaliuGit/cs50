@@ -7,10 +7,10 @@ def main():
 
     if is_valid == True:
         try:
-            with Image.open(sys.argv[1]) as image:
-                shirt = Image.open("shirt.png")
-                size = shirt.size
+            shirt = Image.open("shirt.png")
+            size = shirt.size
 
+            with Image.open(sys.argv[1]) as image:
                 fit_image = ImageOps.fit(image, size)
 
                 fit_image.paste(shirt, shirt).save(sys.argv[2])
