@@ -7,6 +7,7 @@ def main():
     if is_valid == True:
         try:
             with Image.open(sys.argv[1]) as image:
+                fit_image = Image.fit()
 
         except FileNotFoundError:
             sys.exit("File does not exist")
