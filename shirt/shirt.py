@@ -32,6 +32,7 @@ def validate_input(arguments):
     elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")) and not arguments[2].lower().endswith((".jpg", ".jpeg", ".png")):
         return "Invalid input"
     elif os.path.split(arguments[1].lower())[1] != os.path.split(arguments[2].lower())[1]:
+        print(os.path.split(arguments[1].lower())[1], os.path.split(arguments[2].lower())[1])
         return "Input and output have different extensions"
 
     return True
