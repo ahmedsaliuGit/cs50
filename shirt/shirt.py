@@ -8,7 +8,9 @@ def main():
         try:
             #
         except FileNotFoundError:
-            sys.exit("")
+            sys.exit("File does not exist")
+    else:
+        sys.exit(is_valid)
 
 
 def validate_input(arguments):
