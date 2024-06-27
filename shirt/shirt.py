@@ -7,13 +7,15 @@ def main():
 
     if is_valid == True:
         try:
-            shirt = Image.open("shirt.png")
-            size = shirt.size
-
             with Image.open(sys.argv[1]) as image:
+                shirt = Image.open("shirt.png")
+                size = shirt.size
+
                 fit_image = ImageOps.fit(image, size)
 
-                fit_image.paste(shirt, shirt).save(sys.argv[2])
+                fit_image.paste(shirt, shirt)
+
+                fit_image.save(sys.argv[2])
 
         except FileNotFoundError:
             sys.exit("File does not exist")
