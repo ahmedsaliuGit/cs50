@@ -4,7 +4,7 @@ import csv
 def main():
     is_valid = validate_input(sys.argv)
 
-    # print(contents)
+    print(contents)
 
 def validate_input(arguments):
     size = len(arguments[1:])
