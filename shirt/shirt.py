@@ -35,7 +35,7 @@ def validate_input(arguments):
             return "Too few command-line arguments"
         elif size > 2:
             return "Too many command-line arguments"
-    elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")):
+    elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")) and not arguments[2].lower().endswith((".jpg", ".jpeg", ".png")):
         return "Not a Python file"
 
     return True
