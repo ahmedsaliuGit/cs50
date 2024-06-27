@@ -1,10 +1,11 @@
 import sys
-import csv
+
 
 def main():
     is_valid = validate_input(sys.argv)
 
     print(is_valid)
+
 
 def validate_input(arguments):
     size = len(arguments[1:])
@@ -16,10 +17,12 @@ def validate_input(arguments):
             return "Too many command-line arguments"
     elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")) and not arguments[2].lower().endswith((".jpg", ".jpeg", ".png")):
         return "Invalid input"
-    elif arguments[1].lower().endswith("jpg") != arguments[2].lower().endswith("jpg"):
+    elif arguments[1].lower().endswith("jpg") != arguments[2].lower().endswith("jpg") or arguments[1].lower().endswith("jpeg") != arguments[2].lower().endswith("jpeg") or
+    arguments[1].lower().endswith("png") != arguments[2].lower().endswith("png"):
         return "Input and output have different extensions"
 
     return True
+
 
 if __name__ == "__main__":
     main()
