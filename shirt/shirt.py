@@ -3,27 +3,6 @@ import csv
 
 def main():
     is_valid = validate_input(sys.argv)
-    contents = []
-
-    if is_valid == True:
-        try:
-            with open(sys.argv[1], "r") as file:
-                reader = csv.reader(file)
-
-                for row in reader:
-                    if row[0] == "name":
-                        continue
-                    last, first = row[0].split(", ")
-                    contents.append([first, last, row[1]])
-
-            with open(sys.argv[2], "w") as file:
-                writer = csv.writer(file, delimiter=",")
-                writer.writerow(["first", "last", "house"])
-                writer.writerows(contents)
-        except IOError:
-            sys.exit(f"Could not read {sys.argv[1]}")
-    else:
-        sys.exit(is_valid)
 
     # print(contents)
 
