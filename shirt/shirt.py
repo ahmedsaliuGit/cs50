@@ -1,12 +1,13 @@
 import sys
-
+from PIL import Image
 
 def main():
     is_valid = validate_input(sys.argv)
 
     if is_valid == True:
         try:
-            #
+            with Image.open("hopper.jpg") as image:
+                
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
