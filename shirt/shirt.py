@@ -1,5 +1,5 @@
 import sys
-import os
+import os.path
 from PIL import Image, ImageOps
 
 def main():
@@ -31,8 +31,7 @@ def validate_input(arguments):
             return "Too many command-line arguments"
     elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")) and not arguments[2].lower().endswith((".jpg", ".jpeg", ".png")):
         return "Invalid input"
-    elif os.path.split(arguments[1].lower())[1] != os.path.split(arguments[2].lower())[1]:
-        print(os.path.split(arguments[1].lower())[1], os.path.split(arguments[2].lower())[1])
+    elif os.path.splitext(arguments[1].lower())[1] != os.path.splitext(arguments[2].lower())[1]:
         return "Input and output have different extensions"
 
     return True
