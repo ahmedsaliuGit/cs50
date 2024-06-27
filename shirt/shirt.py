@@ -1,5 +1,5 @@
 import sys
-from PIL import Image
+from PIL import Image, ImageOps
 
 def main():
     is_valid = validate_input(sys.argv)
@@ -7,7 +7,7 @@ def main():
     if is_valid == True:
         try:
             with Image.open(sys.argv[1]) as image:
-                fit_image = Image.fit()
+                fit_image = ImageOps.fit(image)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
