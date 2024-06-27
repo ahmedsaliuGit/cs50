@@ -4,7 +4,11 @@ import sys
 def main():
     is_valid = validate_input(sys.argv)
 
-    print(is_valid)
+    if is_valid == True:
+        try:
+            #
+        except FileNotFoundError:
+            sys.exit("")
 
 
 def validate_input(arguments):
