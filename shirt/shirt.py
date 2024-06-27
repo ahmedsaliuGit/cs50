@@ -7,7 +7,10 @@ def main():
     if is_valid == True:
         try:
             with Image.open(sys.argv[1]) as image:
-                fit_image = ImageOps.fit(image)
+                shirt = Image.open("shirt.png")
+                size = shirt.size
+
+                fit_image = ImageOps.fit(image, size)
 
         except FileNotFoundError:
             sys.exit("File does not exist")
