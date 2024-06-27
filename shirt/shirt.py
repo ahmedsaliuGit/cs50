@@ -6,8 +6,8 @@ def main():
 
     if is_valid == True:
         try:
-            with Image.open("hopper.jpg") as image:
-                
+            with Image.open(sys.argv[1]) as image:
+
         except FileNotFoundError:
             sys.exit("File does not exist")
     else:
