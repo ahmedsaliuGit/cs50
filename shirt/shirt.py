@@ -36,7 +36,7 @@ def validate_input(arguments):
         elif size > 2:
             return "Too many command-line arguments"
     elif not arguments[1].lower().endswith((".jpg", ".jpeg", ".png")) and not arguments[2].lower().endswith((".jpg", ".jpeg", ".png")):
-        return "Not a Python file"
+        return "Input and output have different extensions"
 
     return True
 
