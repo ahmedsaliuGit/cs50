@@ -12,6 +12,9 @@ def test_valid_ip():
 
 def test_invalid_ip():
     assert validate("-192.0.1.2") == "Invalid"
+    assert validate("cat") == "Invalid"
+    assert validate("192.678.1.2") == "Invalid"
+    assert validate("1234567890") == "Invalid"
 
 if __name__ == "__main__":
     main()
