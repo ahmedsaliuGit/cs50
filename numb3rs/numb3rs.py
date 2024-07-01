@@ -3,14 +3,14 @@ import sys
 
 
 def main():
-    validate(input("IPv4 Address: "))
+    print(validate(input("IPv4 Address: ")))
 
 
 def validate(ip):
     if re.search(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}", ip):
-        return True
+        return "Valid"
     else:
-        return False
+        return "Invalid"
 
 
 if __name__ == "__main__":
