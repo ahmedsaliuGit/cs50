@@ -7,7 +7,7 @@ def main():
 
 
 def validate(ip):
-    if re.search(r"^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$", ip):
+    if matches := re.search(r"^(\d{1,3})\.(\d{1,3})\.\d{1,3}\.\d{1,3}$", ip):
         return "Valid"
     else:
         return "Invalid"
