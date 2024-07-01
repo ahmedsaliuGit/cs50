@@ -9,11 +9,11 @@ def main():
 def validate(ip):
     if matches := re.search(r"^(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})$", ip):
         if 0 < int(matches[1]) > 255 or 0 < int(matches[2]) > 255 or 0 < int(matches[3]) > 255 or 0 < int(matches[4]) > 255:
-            return "Invalid"
+            return False
 
-        return "Valid"
+        return True
     else:
-        return "Invalid"
+        return False
 
 
 if __name__ == "__main__":
