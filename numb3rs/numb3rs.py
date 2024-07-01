@@ -8,6 +8,8 @@ def main():
 
 def validate(ip):
     if matches := re.search(r"^(\d{1,3})\.(\d{1,3})\.\d{1,3}\.\d{1,3}$", ip):
+        if matches.group(0) < :
+
         return "Valid"
     else:
         return "Invalid"
