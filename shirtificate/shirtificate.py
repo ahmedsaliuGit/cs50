@@ -2,7 +2,8 @@ from fpdf import FPDF
 
 class PDF(FPDF):
     def __init__(self):
-        super().image("./shirtificate.png", 10, 70, 190)
+        super()
+        self.image("./shirtificate.png", 10, 70, 190)
 
 def main():
     name = input("Name: ")
